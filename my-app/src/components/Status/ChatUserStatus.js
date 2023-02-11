@@ -11,12 +11,11 @@ const ChatUserStatus = ({ setChatStatus }) => {
   return (
     <div className="chat-user-status">
       <select value={status} onChange={handleStatusChange}>
-        <option value="online"></option>
-        <option value="away">Away</option>
-        <option value="busy">Busy</option>
-        <option value="offline">Offline</option>
+        <option value="ONLINE">Online</option>
+        <option value="OFFLINE">Offline</option>
       </select>
     </div>
   );
 };
+
 export default ChatUserStatus;
