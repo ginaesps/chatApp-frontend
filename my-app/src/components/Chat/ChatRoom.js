@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ChatList from './ChatList';
 import ChatWindow from './ChatWindow';
-import ChatUserStatus from './ChatUserStatus';
+import ChatUserStatus from '../Status/ChatUserStatus';
 import { connect } from 'react-redux';
-import { getChatData, setChatStatus } from '../redux/actions/chatActions';
+import { getChatData, setChatStatus } from '../../redux/actions/chatRoomActions';
 
 const ChatRoom = ({ chatData, getChatData, setChatStatus }) => {
   useEffect(() => {
