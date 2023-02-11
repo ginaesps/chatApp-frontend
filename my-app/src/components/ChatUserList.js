@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ChatList = ({ chatData, setSelectedUser }) => {
+const ChatUserList = ({ chatData, setSelectedUser }) => {
   return (
-    <ul className="chat-list">
+    <ul className="chat-user-list">
       {chatData.map((user) => (
         <li key={user.id} onClick={() => setSelectedUser(user)}>
           {user.username}
@@ -12,4 +12,4 @@ const ChatList = ({ chatData, setSelectedUser }) => {
   );
 };
 
-export default ChatList;
+export default ChatUserList;

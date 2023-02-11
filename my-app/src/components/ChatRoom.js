@@ -3,7 +3,7 @@ import ChatList from './ChatList';
 import ChatWindow from './ChatWindow';
 import ChatUserStatus from './ChatUserStatus';
 import { connect } from 'react-redux';
-import { getChatData, setChatStatus } from '../actions/chatActions';
+import { getChatData, setChatStatus } from '../redux/actions/chatActions';
 
 const ChatRoom = ({ chatData, getChatData, setChatStatus }) => {
   useEffect(() => {
